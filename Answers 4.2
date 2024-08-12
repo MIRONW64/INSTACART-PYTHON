@@ -1,0 +1,391 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "73199ee2-1d07-4d92-a9a3-e12a8880a9ea",
+   "metadata": {},
+   "source": [
+    "## 0.1 import libraries"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "f24f1c31-08a0-44f7-8766-250c92defb38",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Import libraries\n",
+    "import pandas as pd\n",
+    "import numpy as np\n",
+    "import os "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "5fb7691d-0f79-4ec2-b6a5-ec00b7fd2170",
+   "metadata": {},
+   "source": [
+    "## 02. WORKING WITH PYTHON DATA TYPES "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "7a9461b8-288c-47db-ad18-de6fd3b4e352",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#3 different ways to reach 100\n",
+    "x=50\n",
+    "y=50"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "65a17d1c-b564-401c-8e81-3ba88ed01a27",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "100"
+      ]
+     },
+     "execution_count": 7,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#option 1\n",
+    "x+y"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "93d07e6c-7a8b-4bf2-ba4b-51772ce9e6e3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "100"
+      ]
+     },
+     "execution_count": 9,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#option 2\n",
+    "x*2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "3e625939-9a08-4be6-a502-98370e6d44ee",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "100"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#option 3\n",
+    "x*3-y"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3e1f34b8-89f5-4f6d-9d55-5d923df44efc",
+   "metadata": {},
+   "source": [
+    "## code 2 floating-point variables and divide them by each other"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "c96af235-e4ef-493d-99fd-39e74ea60d6a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#define the two floating-point variables\n",
+    "x=10.5\n",
+    "y=3.2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "ab5fc28f-38f8-4b1b-9df6-400ece63716e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "3.28125"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#perfom the division\n",
+    "x/y"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "f790913b-f231-40f4-bd93-b2133421db92",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3.28125\n"
+     ]
+    }
+   ],
+   "source": [
+    "#print the result\n",
+    "print(x/y)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "2c00d548-9986-44f3-885e-6b7bed2417a3",
+   "metadata": {},
+   "source": [
+    "## Construct a short word made of separate strings"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "7460ff2f-0345-40d3-9b58-bce75152f214",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#define the separate strings\n",
+    "x='Caro'\n",
+    "y='li'\n",
+    "z='na'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "c6a1d35d-7cea-4f9a-8a9d-524ea070b482",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#concatenate the string\n",
+    "word=x+y+z"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "07449619-e1f8-4540-9838-eb34562a9c2d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The constructed word is: Carolina\n"
+     ]
+    }
+   ],
+   "source": [
+    "#print the result\n",
+    "print('The constructed word is:',word)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "240bd5b5-04bc-4b5b-a01b-47be57062e6f",
+   "metadata": {},
+   "source": [
+    "## Construct 2 short sentences made of separate strings."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 49,
+   "id": "ca428fbb-e4d1-4b32-8ed2-48aad5bd9723",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Define the string for the 1st sentence\n",
+    "part1_1 ='I '\n",
+    "part1_2 ='love '\n",
+    "part1_3 ='making '\n",
+    "part1_4 ='sourdough '\n",
+    "part1_5 ='!'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "id": "7d08d2a8-703e-44a0-8803-711d5fe61700",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#concatenate the string for the 1st sentence\n",
+    "sentence1 = part1_1 + part1_2 + part1_3 + part1_4 + part1_5"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 66,
+   "id": "de652e98-e6ca-47b9-b42b-20a2c4f18a17",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Define the string for the 2nd sentence\n",
+    "part2_1 ='Although '\n",
+    "part2_2 ='it '\n",
+    "part2_3 ='does '\n",
+    "part2_4 ='take '\n",
+    "part2_5 ='FOREVER'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "id": "74dd3b42-f4db-4508-a18c-8b2f2a5d9105",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#concatenate the string for the 2nd sentence\n",
+    "sentence2= part2_1 + part2_2 + part2_3 + part2_4 + part2_5"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "b55e79e7-2961-480c-8d2b-f9407a3fa80c",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#print the sentences"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 68,
+   "id": "50316d7a-3e5c-4fb0-a479-42dc30a1f4f5",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "I love making sourdough !\n",
+      "Although it does take FOREVER\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(sentence1)\n",
+    "print(sentence2)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "539307ff-27a7-4e80-87f4-fd242c28b99e",
+   "metadata": {},
+   "source": [
+    "## BONUS make a string appear 100 times."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "id": "909587b7-e0f3-412c-a13b-c47e0c2c832a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#define a string\n",
+    "string_to_repeat= 'Summer! '"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 70,
+   "id": "75e199e7-724e-4efb-90b0-f27c7adc5ab3",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#Repeat the string 100 times\n",
+    "repeated_string=string_to_repeat*100"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 71,
+   "id": "429e79c3-f71d-401d-84ee-c25c817f2d58",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! Summer! \n"
+     ]
+    }
+   ],
+   "source": [
+    "#print the results\n",
+    "print(repeated_string)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ffae4bdb-a266-4187-911c-fe714419908d",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.7"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
