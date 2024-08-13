@@ -65,6 +65,13 @@ For this project, the following libraries were used:
 ● **Scipy**: for data equations
 
 # Folders
+The projetc files are  structure upon the following order, containing:
 
+- **Project management**: The projetc brief, Data dictionary and orginal Data Set.
+- **Scripts**: with the Jupiter notebooks used to complete the analysis.
+- **Analysis**: with the visualizations used for the final presentation.
+- **Sent to Client**: the analysis and presentation in Excel showing the process, insights and recommendations.
 
+# Resources
+*Note: Instacart is a real company that’s made their data available online. However, the contents of the attached project brief have been fabricated by CareerFoundry for the purpose of this analysis.*
 
