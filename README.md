@@ -40,11 +40,11 @@ customers are ordering, and anything else you can think of.
 
 # Data
 
-● Orders
+- Orders
 
-● Products
+- Products
 
-● Customers
+- Customers
 
 **Instacart Data Sets** :
 - [Dictionary](https://gist.github.com/jeremystan/c3b39d947d9b88b3ccff3147dbcf6c6b)
