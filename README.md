@@ -30,16 +30,17 @@ customers** in their system and how their ordering behaviors differ.
 
 **Instacart Data Sets** :
 - [Dictionary](https://gist.github.com/jeremystan/c3b39d947d9b88b3ccff3147dbcf6c6b)
+  
 
 # Tools
 For this project, the following libraries were used:
 
-● Pandas - for data analysis
+● **Pandas** - for data analysis
 
-● Seaborn - for visualizations 
+● **Seaborn** - for visualizations 
 
-● Matplotlib  - for visualizations 
+● **Matplotlib**  - for visualizations 
 
-● Scipy: for data equations
+● **Scipy**: for data equations
 
 
