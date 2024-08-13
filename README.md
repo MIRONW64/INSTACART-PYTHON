@@ -56,12 +56,15 @@ For this project, the following libraries were used:
 
 ● **Pandas** - for data analysis
 
+● **Numpy** - for mathemical equations
+
 ● **Seaborn** - for visualizations 
 
 ● **Matplotlib**  - for visualizations 
 
 ● **Scipy**: for data equations
 
-#
+# Folders
+
 
 
