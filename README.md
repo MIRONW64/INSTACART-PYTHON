@@ -20,7 +20,8 @@ product orders.
 
 ● The marketing and sales teams are particularly interested in the **different types of
 customers** in their system and how their ordering behaviors differ. 
-○ What’s the distribution among users in regards to their brand loyalty (i.e., how
+
+○ What’s the **distribution** among users in regards to their **brand loyalty** (i.e., how
 often do they return to Instacart)?
 
 ○ Are there differences in **ordering habits** based on a **customer’s loyalty status**?
@@ -47,6 +48,7 @@ customers are ordering, and anything else you can think of.
 
 **Instacart Data Sets** :
 - [Dictionary](https://gist.github.com/jeremystan/c3b39d947d9b88b3ccff3147dbcf6c6b)
+- “The Instacart Online Grocery ShoppingDataset 2017”, Accessed from www.instacart.com/datasets/grocery-shopping-2017 via [Kaggle](https://www.kaggle.com/datasets/psparks/instacart-market-basket-analysis)
   
 
 # Tools
@@ -59,5 +61,7 @@ For this project, the following libraries were used:
 ● **Matplotlib**  - for visualizations 
 
 ● **Scipy**: for data equations
+
+#
 
 
